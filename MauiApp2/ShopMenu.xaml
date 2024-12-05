@@ -2,11 +2,110 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauiApp2.ShopMenu"
-             Title="ShopMenu">
-    <VerticalStackLayout>
+             Title="ShopMenu"
+             BackgroundColor="PaleGreen">
+    <VerticalStackLayout Spacing="20">
         <Label 
-            Text="Welcome to .NET MAUI!"
+            Text="Points    "
+            VerticalOptions="Center" 
+            HorizontalOptions="End" />
+        <Label 
+    Text=""
+    HeightRequest="10" />
+        <HorizontalStackLayout Spacing="10">
+            <Label 
+                Text=""
+                WidthRequest="60" />
+            <Grid>
+                <BoxView HorizontalOptions="Center" VerticalOptions="Center" HeightRequest="75" WidthRequest="200" BackgroundColor="LimeGreen" CornerRadius="10"/>
+                <Label Text="Super Member" Grid.Row="0"  FontAttributes="Bold" BackgroundColor="LimeGreen" FontSize="Large" HorizontalOptions="Center" VerticalOptions="Center"/>
+            </Grid>
+            <Label 
+                Text="€4,99 per month "
+                VerticalOptions="Center" 
+                HorizontalOptions="Center"
+                WidthRequest="60"/>
+        </HorizontalStackLayout>
+        <Label 
+            Text="Points    "
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
+
+        <HorizontalStackLayout Spacing="10">
+            <Label 
+                Text=""
+                WidthRequest="75" />    
+            <Grid>
+                <BoxView HorizontalOptions="Center" VerticalOptions="Center" HeightRequest="50" WidthRequest="175" BackgroundColor="LimeGreen" CornerRadius="10"/>
+                <Label Text="1 Point" Grid.Row="0"  FontAttributes="Bold" BackgroundColor="LimeGreen" FontSize="Large" HorizontalOptions="Center" VerticalOptions="Center"/>
+            </Grid>
+            <Label 
+                Text="€1,-"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center"
+                WidthRequest="60"/>
+        </HorizontalStackLayout>
+
+        <HorizontalStackLayout Spacing="10">
+            <Label 
+        Text=""
+        WidthRequest="75" />
+            <Grid>
+                <BoxView HorizontalOptions="Center" VerticalOptions="Center" HeightRequest="50" WidthRequest="175" BackgroundColor="LimeGreen" CornerRadius="10"/>
+                <Label Text="5 Points" Grid.Row="0"  FontAttributes="Bold" BackgroundColor="LimeGreen" FontSize="Large" HorizontalOptions="Center" VerticalOptions="Center"/>
+            </Grid>
+            <Label 
+        Text="€4,50"
+        VerticalOptions="Center" 
+        HorizontalOptions="Center"
+        WidthRequest="60"/>
+        </HorizontalStackLayout>
+
+        <HorizontalStackLayout Spacing="10">
+            <Label 
+        Text=""
+        WidthRequest="75" />
+            <Grid>
+                <BoxView HorizontalOptions="Center" VerticalOptions="Center" HeightRequest="50" WidthRequest="175" BackgroundColor="LimeGreen" CornerRadius="10"/>
+                <Label Text="10 Points" Grid.Row="0"  FontAttributes="Bold" BackgroundColor="LimeGreen" FontSize="Large" HorizontalOptions="Center" VerticalOptions="Center"/>
+            </Grid>
+            <Label 
+        Text="€7,-"
+        VerticalOptions="Center" 
+        HorizontalOptions="Center"
+        WidthRequest="60"/>
+        </HorizontalStackLayout>
+
+        <HorizontalStackLayout Spacing="10">
+            <Label 
+        Text=""
+        WidthRequest="75" />
+            <Grid>
+                <BoxView HorizontalOptions="Center" VerticalOptions="Center" HeightRequest="50" WidthRequest="175" BackgroundColor="LimeGreen" CornerRadius="10"/>
+                <Label Text="20 Points" Grid.Row="0"  FontAttributes="Bold" BackgroundColor="LimeGreen" FontSize="Large" HorizontalOptions="Center" VerticalOptions="Center"/>
+            </Grid>
+            <Label 
+        Text="€12,50"
+        VerticalOptions="Center" 
+        HorizontalOptions="Center"
+        WidthRequest="60"/>
+        </HorizontalStackLayout>
+
+        <HorizontalStackLayout Spacing="10">
+            <Label 
+        Text=""
+        WidthRequest="75" />
+            <Grid>
+                <BoxView HorizontalOptions="Center" VerticalOptions="Center" HeightRequest="50" WidthRequest="175" BackgroundColor="LimeGreen" CornerRadius="10"/>
+                <Label Text="50 Points" Grid.Row="0"  FontAttributes="Bold" BackgroundColor="LimeGreen" FontSize="Large" HorizontalOptions="Center" VerticalOptions="Center"/>
+            </Grid>
+            <Label 
+        Text="€25,-"
+        VerticalOptions="Center" 
+        HorizontalOptions="Center"
+        WidthRequest="60"/>
+        </HorizontalStackLayout>
+
     </VerticalStackLayout>
+    
 </ContentPage>
