@@ -14,14 +14,14 @@
 
             if (user == "123" && pass == "123")
             {
+                UsernameEntry.Text = "";
+                PassEntry.Text = "";
                 Navigation.PushAsync(new MainMenu());
                 //LoginBtn.Text = "Correct";
             }
             else
             {
                 LoginBtn.Text = "Incorrect";
-                UsernameEntry.Text = "";
-                PassEntry.Text = "";
             }
            
         }
