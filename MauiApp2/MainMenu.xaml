@@ -2,11 +2,96 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauiApp2.MainMenu"
-             Title="MainMenu">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+             Title="MainMenu"
+             BackgroundColor="PaleGreen">
+    <VerticalStackLayout Spacing="35">
+        
+        
+        <HorizontalStackLayout>
+            
+            <Button
+        x:Name="ProfileBtn"
+        Text="Profile" 
+        SemanticProperties.Hint="Opens the profile page."
+        Clicked="OnProfileClicked"
+        HorizontalOptions="Start" 
+        VerticalOptions="Start"/>
+            
+            <Label
+Text="SUPER"
+HorizontalOptions="Center"
+SemanticProperties.HeadingLevel="Level3" />
+            
+            <Label
+                Text=""
+                WidthRequest="130" />
+            
+            <Label
+Text="5 Points"
+HorizontalOptions="End"
+SemanticProperties.HeadingLevel="Level3" />
+            
+            <Button
+x:Name="ShopBtn"
+Text="Shop" 
+SemanticProperties.Hint="Opens the shop page."
+Clicked="OnShopClicked"
+HorizontalOptions="Start" 
+VerticalOptions="Start"/>
+        </HorizontalStackLayout>
+        <Image
+             Source="natuur.jpg" 
+             HeightRequest="185"
+             Aspect="AspectFit"
+             SemanticProperties.Description="dot net bot in a hovercraft number nine" />
+
+        <HorizontalStackLayout 
+            Spacing="20">
+            <Label
+                Text=""
+                WidthRequest="100" />
+            
+            <Button
+                x:Name="PlayBtn"
+                Text="Play" 
+                SemanticProperties.Hint="Opens the play page."
+                Clicked="OnPlayClicked"
+                HorizontalOptions="Center"
+                WidthRequest="110"/>
+            
+            <Label
+                Text="2 Hours left"
+                HorizontalOptions="Center"
+                 VerticalOptions="Center"
+                SemanticProperties.HeadingLevel="Level3" />
+        </HorizontalStackLayout>
+
+        <HorizontalStackLayout 
+     Spacing="20">
+            <Label
+                 Text=""
+                 WidthRequest="100" />
+
+            <Button
+                x:Name="RateBtn"
+                Text="Rate" 
+                SemanticProperties.Hint="Opens the rating page."
+                Clicked="OnRateClicked"
+                HorizontalOptions="Start" 
+                VerticalOptions="Start"
+                WidthRequest="110"/>
+        </HorizontalStackLayout>
+
+        <Label
+     Text=""
+     HeightRequest="25" />
+        <Button
+x:Name="MakeQuestBtn"
+Text="Make Quest" 
+SemanticProperties.Hint="Opens the MakeQuest page."
+Clicked="OnMakeQuestClicked"
+HorizontalOptions="Start" 
+VerticalOptions="EndAndExpand" />
+
     </VerticalStackLayout>
 </ContentPage>

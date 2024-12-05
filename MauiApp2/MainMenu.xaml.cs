@@ -1,9 +1,34 @@
-namespace MauiApp2;
-
-public partial class NewPage1 : ContentPage
+namespace MauiApp2
 {
-	public NewPage1()
-	{
-		InitializeComponent();
-	}
+    public partial class MainMenu : ContentPage
+    {
+        public MainMenu()
+        {
+            InitializeComponent();
+        }
+
+        private void OnProfileClicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new Profile());
+        }
+
+        private void OnShopClicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new ShopMenu());
+        }
+
+        private void OnPlayClicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new PlayMenu());
+        }
+
+        private void OnRateClicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new RateMenu());
+        }
+        private void OnMakeQuestClicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new MakeQuest());
+        }
+    }
 }
