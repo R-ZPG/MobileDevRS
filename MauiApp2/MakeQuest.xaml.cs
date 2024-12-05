@@ -6,4 +6,9 @@ public partial class MakeQuest : ContentPage
 	{
 		InitializeComponent();
 	}
+
+    private void OnSubmitClicked(object sender, EventArgs e)
+    {
+        
+    }
 }
