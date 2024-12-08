@@ -2,11 +2,20 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauiApp2.ManageQuest"
-             Title="ManageQuest">
+             Title="ManageQuest"
+             BackgroundColor="PaleGreen">
     <VerticalStackLayout>
         <Label 
-            Text="Welcome to .NET MAUI!"
+            Text="Manage Quest Menu"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
+
+        <Button
+            x:Name="MakeQuestBtn"
+            Text="Make Quest" 
+            SemanticProperties.Hint="Opens the MakeQuest page."
+            Clicked="OnMakeQuestClicked"
+            HorizontalOptions="Start" 
+            VerticalOptions="EndAndExpand" />
     </VerticalStackLayout>
 </ContentPage>

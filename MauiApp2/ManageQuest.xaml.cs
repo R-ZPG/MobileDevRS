@@ -6,4 +6,9 @@ public partial class ManageQuest : ContentPage
 	{
 		InitializeComponent();
 	}
+
+    private void OnMakeQuestClicked(object sender, EventArgs e)
+    {
+        Navigation.PushAsync(new MakeQuest());
+    }
 }

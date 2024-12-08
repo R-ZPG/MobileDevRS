@@ -30,5 +30,10 @@ namespace MauiApp2
         {
             Navigation.PushAsync(new MakeQuest());
         }
+
+        private void OnManageMenuClicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new ManageMenu());
+        }
     }
 }

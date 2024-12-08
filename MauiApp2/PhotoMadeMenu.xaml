@@ -2,11 +2,39 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauiApp2.PhotoMadeMenu"
-             Title="PhotoMadeMenu">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+             Title="PhotoMadeMenu"
+             BackgroundColor="PaleGreen">
+    <VerticalStackLayout Spacing="15" Padding="40">
+
+        <Label
+        Text="This is your photo!"
+        HorizontalOptions="Center"
+            VerticalOptions="Center"
+        SemanticProperties.HeadingLevel="Level3" />
+        <Image
+         Source="autumn.jpg" 
+         HeightRequest="185"
+         Aspect="AspectFit"
+         SemanticProperties.Description="dot net bot in a hovercraft number nine" />
+        <Label
+ Text=""
+ HeightRequest="25" />
+        <Button
+        x:Name="SendBtn"
+        Text="Send photo (costs 1 point)" 
+        SemanticProperties.Hint="Sends your photo."
+        Clicked="OnSendPhotoClicked"
+        HorizontalOptions="Center" 
+        VerticalOptions="EndAndExpand" />
+        <Button
+            x:Name="RemakePhotoBtn"
+            Text="Make new photo" 
+            SemanticProperties.Hint="Opens the MakePhoto page."
+            Clicked="OnRemakePhotoClicked"
+            HorizontalOptions="Center" 
+            VerticalOptions="EndAndExpand" />
+
+        
+
     </VerticalStackLayout>
 </ContentPage>

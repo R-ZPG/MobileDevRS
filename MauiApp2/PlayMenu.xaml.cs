@@ -6,4 +6,9 @@ public partial class PlayMenu : ContentPage
 	{
 		InitializeComponent();
 	}
+
+    private void OnMakePhotoClicked(object sender, EventArgs e)
+    {
+        Navigation.PushAsync(new PhotoMadeMenu());
+    }
 }

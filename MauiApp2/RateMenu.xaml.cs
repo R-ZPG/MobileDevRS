@@ -6,4 +6,9 @@ public partial class RateMenu : ContentPage
 	{
 		InitializeComponent();
 	}
+
+    private void OnRateClicked(object sender, EventArgs e)
+    {
+        Navigation.PushAsync(new RatePhoto());
+    }
 }

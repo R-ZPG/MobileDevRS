@@ -6,4 +6,14 @@ public partial class ManageMenu : ContentPage
 	{
 		InitializeComponent();
 	}
+
+    private void OnManageQuestsClicked(object sender, EventArgs e)
+    {
+        Navigation.PushAsync(new ManageQuest());
+    }
+
+    private void OnManageUsersClicked(object sender, EventArgs e)
+    {
+        Navigation.PushAsync(new ManageUsers());
+    }
 }

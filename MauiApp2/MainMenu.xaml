@@ -85,13 +85,24 @@ VerticalOptions="Start"/>
         <Label
      Text=""
      HeightRequest="25" />
-        <Button
-x:Name="MakeQuestBtn"
-Text="Make Quest" 
-SemanticProperties.Hint="Opens the MakeQuest page."
-Clicked="OnMakeQuestClicked"
-HorizontalOptions="Start" 
-VerticalOptions="EndAndExpand" />
+        <HorizontalStackLayout 
+Spacing="20">
+            <Button
+                x:Name="MakeQuestBtn"
+                Text="Make Quest" 
+                SemanticProperties.Hint="Opens the MakeQuest page."
+                Clicked="OnMakeQuestClicked"
+                HorizontalOptions="Start" 
+                VerticalOptions="EndAndExpand" />
+
+            <Button
+                x:Name="ManageMenuBtn"
+                Text="Moderate" 
+                SemanticProperties.Hint="Opens the ManangeMenu page."
+                Clicked="OnManageMenuClicked"
+                HorizontalOptions="End" 
+                VerticalOptions="EndAndExpand" />
+        </HorizontalStackLayout>
 
     </VerticalStackLayout>
 </ContentPage>
