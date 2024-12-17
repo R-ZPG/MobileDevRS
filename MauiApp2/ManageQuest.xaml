@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauiApp2.ManageQuest"
-             Title="ManageQuest"
+             Title="Manage all quests"
              BackgroundColor="PaleGreen">
     <VerticalStackLayout>
         <Label 
@@ -13,6 +13,7 @@
         <Button
             x:Name="MakeQuestBtn"
             Text="Make Quest" 
+            BackgroundColor="Green"
             SemanticProperties.Hint="Opens the MakeQuest page."
             Clicked="OnMakeQuestClicked"
             HorizontalOptions="Start" 

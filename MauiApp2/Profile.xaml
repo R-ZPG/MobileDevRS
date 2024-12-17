@@ -25,6 +25,7 @@
         <Button
             x:Name="LogoutBtn"
             Text="Log Out" 
+            BackgroundColor="Green"
             SemanticProperties.Hint="Logs you out."
             Clicked="OnLogoutClicked"
             HorizontalOptions="Center"

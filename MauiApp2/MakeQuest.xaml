@@ -2,27 +2,36 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauiApp2.MakeQuest"
-             Title="MakeQuest"
+             Title="Make a quest"
              BackgroundColor="PaleGreen">
     <VerticalStackLayout Padding="40" Spacing="50">
-        <Grid>
-            <BoxView HorizontalOptions="Center" VerticalOptions="Center" HeightRequest="50" WidthRequest="175" BackgroundColor="LimeGreen" CornerRadius="10"/>
-            <Entry x:Name="QuestEntry"  Text="" Placeholder="Type quest here" Grid.Row="0"  FontAttributes="Bold" BackgroundColor="LimeGreen" FontSize="Large" HorizontalOptions="Center" VerticalOptions="Center"/>
-        </Grid>
+        <Entry x:Name="QuestEntry"  Text="" Placeholder="Type quest here" Grid.Row="0"  FontAttributes="Bold" FontSize="Large" HorizontalOptions="Center" PlaceholderColor="darkGray" TextColor="Black" VerticalOptions="Center"/>
 
-        <Grid>
-            <BoxView HorizontalOptions="Center" VerticalOptions="Center" HeightRequest="50" WidthRequest="175" BackgroundColor="LimeGreen" CornerRadius="10"/>
-            <Label Text="Theme1" Grid.Row="0"  FontAttributes="Bold" BackgroundColor="LimeGreen" FontSize="Large" HorizontalOptions="Center" VerticalOptions="Center"/>
-        </Grid>
-
-        <Grid>
-            <BoxView HorizontalOptions="Center" VerticalOptions="Center" HeightRequest="50" WidthRequest="175" BackgroundColor="LimeGreen" CornerRadius="10"/>
-            <Label Text="Theme2" Grid.Row="0"  FontAttributes="Bold" BackgroundColor="LimeGreen" FontSize="Large" HorizontalOptions="Center" VerticalOptions="Center"/>
-        </Grid>
+            <Picker x:Name="PickerTheme1"
+        Title="Choose first theme">
+            <Picker.ItemsSource>
+                <x:Array Type="{x:Type x:String}">
+                    <x:String>Nature</x:String>
+                    <x:String>City</x:String>
+                    <x:String>Animals</x:String>
+                </x:Array>
+            </Picker.ItemsSource>
+        </Picker>
+        <Picker x:Name="PickerTheme2"
+Title="Choose second theme (optional)">
+            <Picker.ItemsSource>
+                <x:Array Type="{x:Type x:String}">
+                    <x:String>Nature</x:String>
+                    <x:String>City</x:String>
+                    <x:String>Animals</x:String>
+                </x:Array>
+            </Picker.ItemsSource>
+        </Picker>
 
         <Button
     x:Name="SubmitBtn"
     Text="Submit! (+5 points)" 
+            BackgroundColor="Green"
     SemanticProperties.Hint="Submits your new quest."
     Clicked="OnSubmitClicked"
     HorizontalOptions="Fill" 

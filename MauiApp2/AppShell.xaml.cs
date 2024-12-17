@@ -5,6 +5,8 @@
         public AppShell()
         {
             InitializeComponent();
+
+            AppShell.SetBackgroundColor(this, Color.FromRgb(150,255,150));
         }
     }
 }

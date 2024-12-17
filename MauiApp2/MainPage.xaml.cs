@@ -21,6 +21,7 @@
             }
             else
             {
+                Navigation.PushAsync(new QuestTestPage());
                 LoginBtn.Text = "Incorrect";
             }
            

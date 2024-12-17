@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauiApp2.MainMenu"
-             Title="MainMenu"
+             Title="Home"
              BackgroundColor="PaleGreen">
     <VerticalStackLayout Spacing="35">
         
@@ -11,6 +11,7 @@
             
             <Button
         x:Name="ProfileBtn"
+                BackgroundColor="Green"
         Text="Profile" 
         SemanticProperties.Hint="Opens the profile page."
         Clicked="OnProfileClicked"
@@ -34,6 +35,7 @@ SemanticProperties.HeadingLevel="Level3" />
             <Button
 x:Name="ShopBtn"
 Text="Shop" 
+                BackgroundColor="Green"
 SemanticProperties.Hint="Opens the shop page."
 Clicked="OnShopClicked"
 HorizontalOptions="Start" 
@@ -54,6 +56,7 @@ VerticalOptions="Start"/>
             <Button
                 x:Name="PlayBtn"
                 Text="Play" 
+                BackgroundColor="Green"
                 SemanticProperties.Hint="Opens the play page."
                 Clicked="OnPlayClicked"
                 HorizontalOptions="Center"
@@ -75,6 +78,7 @@ VerticalOptions="Start"/>
             <Button
                 x:Name="RateBtn"
                 Text="Rate" 
+                BackgroundColor="Green"
                 SemanticProperties.Hint="Opens the rating page."
                 Clicked="OnRateClicked"
                 HorizontalOptions="Start" 
@@ -90,6 +94,7 @@ Spacing="20">
             <Button
                 x:Name="MakeQuestBtn"
                 Text="Make Quest" 
+                BackgroundColor="Green"
                 SemanticProperties.Hint="Opens the MakeQuest page."
                 Clicked="OnMakeQuestClicked"
                 HorizontalOptions="Start" 
@@ -98,6 +103,7 @@ Spacing="20">
             <Button
                 x:Name="ManageMenuBtn"
                 Text="Moderate" 
+                BackgroundColor="Green"
                 SemanticProperties.Hint="Opens the ManangeMenu page."
                 Clicked="OnManageMenuClicked"
                 HorizontalOptions="End" 
